@@ -1,0 +1,56 @@
+<table class="vmDatetimepicker style2">
+	<tr>
+		<td>&nbsp;</td>
+		<td>
+			<button ng-click="addDay();">+</button>
+		</td>
+		<td>
+			<button ng-click="addMonth();">+</button>
+		</td>
+		<td>
+			<button ng-click="addYear();">+</button>
+		</td>
+		<td class="separator">&nbsp;</td>
+		<td>
+			<button ng-click="addHour();">+</button>
+		</td>
+		<td>
+			<button ng-click="addMinute();">+</button>
+		</td>
+	</tr>
+	<tr>
+		<td>
+		<input type"text" readonly disabled ng-model="weekday"/>
+		</td>
+		<td>
+			<input type="number" ng-model="d"/>/</td>
+		<td>
+			<input type="number" ng-model="M"/>/</td>
+		<td>
+			<input type="number" ng-model="y"/>
+		</td>
+		<td class="separator">&nbsp;</td>
+		<td>
+			<input type="number" ng-model="h"/>:</td>
+		<td>
+			<input type="number" ng-model="m"/>
+		</td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td>
+			<button ng-click="removeDay();">-</button>
+		<td>
+			<button ng-click="removeMonth();">-</button>
+		<td>
+			<button ng-click="removeYear();">-</button>
+		</td>
+		<td class="separator">&nbsp;</td>
+		<td>
+			<button ng-click="removeHour();">-</button>
+		</td>
+		<td>
+			<button ng-click="removeMinute();">-</button>
+		</td>
+	</td>
+	</table>

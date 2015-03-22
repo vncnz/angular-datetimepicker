@@ -1,0 +1,86 @@
+
+.vmDatetimepicker * {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+table.vmDatetimepicker tr td input:active,
+table.vmDatetimepicker tr td input:focus {
+  border: none;
+  outline: none;
+}
+
+table.vmDatetimepicker.style1 tr td input,
+table.vmDatetimepicker.style1 tr td button {
+  width:50px;
+  height:30px;
+  line-height:30px;
+  -webkit-appearance: normal;
+  background: white;
+  border: 1px solid gray;
+  text-align: center;
+}
+
+table.vmDatetimepicker.style1 tr td button {
+  cursor: pointer;
+}
+
+table.vmDatetimepicker.style1 tr:nth-child(1) td button {
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}
+
+table.vmDatetimepicker.style1 tr:nth-child(3) td button {
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+
+
+
+
+
+table.vmDatetimepicker.style2 {
+  border-collapse: collapse;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+table.vmDatetimepicker.style2 tr td input,
+table.vmDatetimepicker.style2 tr td button {
+  width:1.1rem;
+  height:1.5rem;
+  line-height:1.5rem;
+  -webkit-appearance: normal;
+  background: white;
+  border: none;
+  text-align: center;
+}
+table.vmDatetimepicker.style2 tr td button {
+  height: 1rem;
+  line-height: 1rem;
+}
+
+table.vmDatetimepicker.style2 tr td:nth-child(1) * {
+  width:4.5rem;
+}
+
+table.vmDatetimepicker.style2 tr td:nth-child(4) * {
+  width:2.2rem;
+}
+
+table.vmDatetimepicker.style2 tr:nth-child(2) td {
+  border: 1px solid transparent;
+  border-top-color: gray;
+  border-bottom-color: gray;
+}
+
+table.vmDatetimepicker.style2 tr:nth-child(2) td:nth-child(1) {
+  border-left-color: black;
+}
+table.vmDatetimepicker.style2 tr:nth-child(2) td:nth-child(7) {
+  border-right-color: black;
+}
