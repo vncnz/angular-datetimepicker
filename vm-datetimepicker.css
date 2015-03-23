@@ -1,0 +1,107 @@
+
+.vmDatetimepicker * {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+table.vmDatetimepicker tr td input:active,
+table.vmDatetimepicker tr td input:focus {
+  border: none;
+  outline: none;
+}
+
+table.vmDatetimepicker.table tr td input,
+table.vmDatetimepicker.table tr td button {
+  width:50px;
+  height:30px;
+  line-height:30px;
+  -webkit-appearance: normal;
+  background: white;
+  border: 1px solid gray;
+  text-align: center;
+}
+
+table.vmDatetimepicker.table tr td button {
+  cursor: pointer;
+}
+
+table.vmDatetimepicker.table tr:nth-child(1) td button {
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}
+
+table.vmDatetimepicker.table tr:nth-child(3) td button {
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+
+
+
+
+
+table.vmDatetimepicker.input {
+  border-collapse: collapse;
+}
+table.vmDatetimepicker.input input::-webkit-outer-spin-button,
+table.vmDatetimepicker.input input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+table.vmDatetimepicker.input input[type="number"] {
+    -moz-appearance: textfield;
+}
+/*
+table.vmDatetimepicker.input input[type="number"]:hover,
+table.vmDatetimepicker.input input[type="number"]:focus {
+    -moz-appearance: number-input;
+    width: 1.8rem;
+}
+*/
+
+table.vmDatetimepicker.input tr td input,
+table.vmDatetimepicker.input tr td button {
+  width:1.1rem;
+  height:1.5rem;
+  line-height:1.5rem;
+  -webkit-appearance: normal;
+  background: white;
+  border: none;
+  text-align: center;
+}
+table.vmDatetimepicker.input tr td button {
+  height: 1rem;
+  line-height: 1rem;
+}
+
+table.vmDatetimepicker.input tr td:nth-child(1) * {
+  width:4.5rem;
+}
+table.vmDatetimepicker.input tr td:nth-child(1) input[type="number"]:hover,
+table.vmDatetimepicker.input tr td:nth-child(1) input[type="number"]:focus {
+    -moz-appearance: number-input;
+    width: 5.3rem;
+}
+
+table.vmDatetimepicker.input tr td:nth-child(4) * {
+  width:2.2rem;
+}
+table.vmDatetimepicker.input tr td:nth-child(4) input[type="number"]:hover,
+table.vmDatetimepicker.input tr td:nth-child(4) input[type="number"]:focus {
+    -moz-appearance: number-input;
+    width: 2.9rem;
+}
+
+table.vmDatetimepicker.input tr:nth-child(2) td {
+  border: 1px solid transparent;
+  border-top-color: gray;
+  border-bottom-color: gray;
+}
+
+table.vmDatetimepicker.input tr:nth-child(2) td:nth-child(1) {
+  border-left-color: black;
+}
+table.vmDatetimepicker.input tr:nth-child(2) td:nth-child(7) {
+  border-right-color: black;
+}
